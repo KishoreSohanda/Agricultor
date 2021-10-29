@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ************************* SECTION 1 ********************* */
+
+/* for width of carousel */
+#sec1{
+    margin: 0rem auto;
+    width: 100%;
+}
+/* for height of carousel */
+.carousel-item img{
+    height: 21rem;
+}
+#sec1.h5,h5{
+    color: white;
+}
+#sec1 p{
+    color: white;
+}
+#sec1 .carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: white;
+}
+#sec1 .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon{
+    filter: invert(black);
+}
+
+/* ********************  SECTION 2  ******************** */
+
+/* #sec2::before{
+    content: "";
+    position: absolute;
+    height: 20rem;
+    width: 100%;
+    top: 10rem;
+    left: 0rem;
+    z-index: 4;
+    background-image: url("https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+} */
+#sec2{
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('../backgrounds/1.jpg');
+    /* background-color: red; */
+}
+#sec2 table th{
+    border: 0.1rem solid black;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+#sec2 table td{
+    border: 0.1rem solid black;
+}
+#sec2 table tr td #tableInput,#sec2 table tr td #tableWeather,#sec2 table tr td #tableMap{
+    display: none;
+}
+#sec2 table tr td span{
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    /* text-align: center; */
+    cursor: pointer;
+    color: white;
+    background-color: rgba(18, 66, 18, 0.863);    
+    padding: 0.3rem 0.2rem ;
+    /* margin: 1rem 0rem; */
+}
+/* #sec2 table tr td span #upArrow1 {
+    margin-left: 9.5rem;
+}
+#sec2 table tr td span #downArrow1 {
+    display: none;
+    margin-left: 9.5rem;
+} */
+#sec2 table li{
+    list-style: none;
+}
+#sec2 table li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: black;
+}
+#sec2 table #seeds, #sec2 table #fertilisers,#sec2 table #pesticides{
+    cursor: pointer;
+}
+#sec2 table #seedSec, #sec2 table #fertiliserSec,#sec2 table #pesticideSec{
+    padding: 0rem 1rem;
+    display: none;
+}
+#sec2 table #seeds a:hover , #sec2 table #fertilisers a:hover , #sec2 table #pesticides a:hover{
+    background-color: yellow;
+}
+#sec2 table td a{
+    text-decoration: none;
+    color: black;
+}
+#mapCol img{
+    margin: 0rem;
+    padding: 0rem;
+    height: 24.5rem;
+    width: 23rem;
+}
+
+/* *************** SECTION 3 **************** */
+#sec3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0rem;
+    background: rgb(186, 247, 186);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cards{
+    border: 0.1rem solid black;
+    height: 18rem;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+.cards h3{
+    text-align: center;
+    border-top: 0.1rem solid black;
+    padding-bottom: 0.5rem;
+}
+.cards .part1{
+    height: 85%;    
+    width: 100%;
+}
+#card1 .part1{
+    background-image: url("https://www.foodbusinessnews.net/ext/resources/2021/2/OrganicWheat_Lead.jpg?1613050685");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card2 .part1{
+    background-image: url("https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/headlines/markets/legacy-vs-price-rice-exports-from-vietnam-and-india-vie-for-asean-trade-post-covid-19/11547949-1-eng-GB/Legacy-vs-price-Rice-exports-from-Vietnam-and-India-vie-for-ASEAN-trade-post-COVID-19.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card3 .part1{
+    background-image: url("https://static.toiimg.com/photo/msid-66847765/66847765.jpg?1776129");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card4 .part1{
+    background-image: url("https://static.toiimg.com/thumb/msid-38620922,width-800,height-600,resizemode-75/38620922.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cards .part2{
+    height: 15%;
+    width: 100%;
+}
+
+

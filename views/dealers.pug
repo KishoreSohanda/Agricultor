@@ -1,0 +1,121 @@
+extends base.pug
+
+block title 
+    title Dealer's Information Page
+
+block style 
+    style 
+        include ../static/allcss/dealers.css
+
+block content 
+    div#states
+        label(for='state') 
+            |Choose a state :-
+        select#state(name='state')
+            option(value='Andaman &amp; Nicobar Island') Andaman &amp; Nicobar Island
+            option(value='Andhra Pradesh') Andhra Pradesh
+            option(value='Arunachal Pradesh') Arunachal Pradesh 
+            option(value='Assam') Assam
+            option(value='Bihar') Bihar
+            option(value='Chandigarh') Chandigarh
+            option(value='Chattisgarh') Chattisgarh
+            option(value='Dadra &amp; Nagar Haveli') Dadra &amp; Nagar Haveli
+            option(value='Daman &amp; Diu') Daman &amp; Diu
+            option(value='Delhi') Delhi
+            option(value='Goa') Goa
+            option(value='Gujarat') Gujarat
+            option(value='Haryana') Haryana
+            option(value='Himachal Pradesh') Himachal Pradesh
+            option(value='J &amp; K') J &amp; K
+            option(value='Jharkhand') Jharkhand
+            option(value='Karnataka') Karnataka
+            option(value='Kerela') Kerela
+            option(value='Ladakh') Ladakh
+            option(value='Lakshadweep') Lakshadweep
+            option(value='Madhya Pradesh') Madhya Pradesh
+            option(value='Maharashtra') Maharashtra
+            option(value='Manipur') Manipur
+            option(value='Meghalaya') Meghalaya
+            option(value='Mizoram') Mizoram
+            option(value='Nagaland') Nagaland
+            option(value='Odisha') Odisha
+            option(value='Poducherry') Poducherry
+            option(value='Punjab') Punjab
+            option(value='Rajasthan') Rajasthan
+            option(value='Sikkim') Sikkim
+            option(value='Tamil Nadu') Tamil Nadu
+            option(value='Telangana') Telangana
+            option(value='Tripura') Tripura
+            option(value='Uttar Pradesh') Uttar Pradesh
+            option(value='Uttarakhand') Uttarakhand
+            option(value='West Bengal') West Bengal
+
+    div#mpDistricts
+        label(for='district')
+            |Choose a district :-
+        select#district(name='district')
+            option(value='Agar') Agar
+            option(value='Alirajpur') Alirajpur
+            option(value='Anuppur') Anuppur
+            option(value='Ashok Nagar') Ashok Nagar
+            option(value='Bala Ghat') Bala Ghat
+            option(value='Barwani') Barwani
+            option(value='Betul') Betul
+            option(value='Bhind') Bhind
+            option(value='Bhopal') Bhopal
+            option(value='Burhanpur') Burhanpur
+            option(value='Chhatarpur') Chhatarpur
+            option(value='Chhindwara') Chhindwara
+            option(value='Damoh') Damoh
+            option(value='Datia') Datia
+            option(value='Dewas') Dewas
+            option(value='Dhar') Dhar
+            option(value='Dindori') Dindori
+            option(value='East Nimar') East Nimar
+            option(value='Guna') Guna
+            option(value='Gwalior') Gwalior
+            option(value='Harda') Harda
+            option(value='Hoshangabaad') Hoshangabaad
+            option(value='Indore') Indore
+            option(value='Jabalpur') Jabalpur
+            option(value='Jhabua') Jhabua
+            option(value='Katani') Katani
+            option(value='Mandala') Mandala
+            option(value='Mandsour') Mandsour
+            option(value='Morena') Morena
+            option(value='Narsimpur') Narsimpur
+            option(value='Neemuch') Neemuch
+            option(value='Panna') Panna
+            option(value='Raisen') Raisen
+            option(value='Rajgarh') Rajgarh
+            option(value='Ratlam') Ratlam
+            option(value='Rewa') Rewa
+            option(value='Sagar') Sagar
+            option(value='Satna') Satna
+            option(value='Sehore') Sehore
+            option(value='Seoni') Seoni
+            option(value='Sahdol') Sahdol
+            option(value='Shajapur') Shajapur
+            option(value='Sheovpur Kala') Sheovpur Kala
+            option(value='Shivpuri') Shivpuri
+            option(value='Sidhi') Sidhi
+            option(value='Singrauli') Singrauli
+            option(value='Tikamgarh') Tikamgarh
+            option(value='Ujjain') Ujjain
+            option(value='Umaria') Umaria
+            option(value='Vidisha') Vidisha
+            option(value='West Nimar') West Nimar
+   
+    table
+        div
+        tr 
+            th 
+            th 
+            th 
+            th
+        td 
+block script
+    script 
+        include ../static/alljs/dealers.js
+    
+    

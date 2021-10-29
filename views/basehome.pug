@@ -1,0 +1,34 @@
+nav#navbar 
+    .cont#logo  
+        img(src="../static/backgrounds/logo.png", alt="Error Loading")
+        p agricultor 
+    .cont#navlinks
+        ul#topnav 
+            li
+                a(href="/")
+                    i.fa.fa-home 
+                    |   Home 
+            li 
+                a(href="/aboutus") About Us 
+            li 
+                a(href="/schemes") Programmes &amp; Schemes   
+            li 
+                a(href="/majorcrops") Major Crops   
+            li 
+                a(href="/newsfeed") News Feed   
+            li 
+                a(href="/communityblog") Community Blog   
+    .cont#login  
+        ul#sign 
+            li 
+                button 
+                    a(href="/signin") 
+                        i.fa.fa-sign-in 
+                        |   SignIn 
+            li 
+                button 
+                    a(href="/signup") 
+                        i.fa.fa-user-plus
+                        |   SignUp
+            .trigram(onclick="toggle()") 
+                i.fa.fa-bars 

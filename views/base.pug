@@ -1,0 +1,41 @@
+doctype html 
+html 
+    head 
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        
+        block title 
+        style 
+            include ../static/allcss/basehome.css
+        block style 
+    body 
+        include /basehome.pug
+        block content 
+        footer 
+            div#foot
+                br
+                a(href="/") Home 
+                a(href="/aboutus") About Us 
+                a(href="/schemes") Programmes &amp; Schemes  
+                a(href="/majorcrops") Major Crops
+                a(href="/newsfeed") News Feed 
+                a(href="/") Community Blog 
+                
+                div.socialMedia
+                    i.fa.fa-envelope
+                    i.fa.fa-facebook-square
+                    i.fa.fa-instagram 
+                    i.fa.fa-twitter 
+                span#span All 
+                    i.fa.fa-copyright
+                    |   CopyRight Reserved @Agricultor 2021.
+                span Last Updated : 1 NOVEMBER,2021
+
+
+
+                 
+        script(src='https://kit.fontawesome.com/a616b3ff45.js' crossorigin='anonymous')
+        script 
+            include  ../static/alljs/basehome.js
+        block script 
+    

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#header{
+    width: 100%;
+    background-color: rgba(132, 209, 8, 0.74);
+    border: 0.1rem solid black;
+    border-top: none;
+    height: 10rem;
+}
+#header #agri{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+#cont{
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(72, 255, 0, 0.171);
+}
+#cont .cards{
+    background-color: white;
+    width: 80%;
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem;
+    padding: 0.3rem 0rem;
+    box-shadow: 0.4rem 0.4rem 0.3rem 0.1rem rgba(0, 0, 0, 0.795);
+}
+
+#cont .cards .left {
+    padding-left: 0.3rem;
+}
+#cont .cards .left img{
+    height: 14.7rem;
+    width: 19rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    border: 0.13rem solid rgb(0, 34, 0);
+}
+#cont .cards .right{
+    padding-left: 2rem;
+    padding-right: 0.8rem;
+}
+#cont .cards .right h3{
+    margin-bottom: 0rem;
+    cursor: context-menu;
+}
+#cont .cards .right .description{
+    text-align: justify;
+    padding: 0.6rem 0rem;
+    cursor: context-menu;
+}
+#cont .cards .right button{
+    width: 20%;
+    display: block;
+    background-color: rgb(12, 88, 16);
+    border: 0.1rem solid black;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.3rem 0rem;
+    outline: none;
+}
+

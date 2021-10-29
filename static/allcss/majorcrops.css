@@ -1,0 +1,19 @@
+svg{
+    height: 40rem ;
+    width: 100%;
+    border: 2px solid black;
+}
+#box{
+    position: absolute;
+    right: 10rem;
+    top: 10rem;
+    height: 15rem ;
+    width: 30%;
+}
+#box #boxMP{
+    display: none;
+}
+#box #stateName{
+    text-align: center;
+    background-color: greenyellow;
+}

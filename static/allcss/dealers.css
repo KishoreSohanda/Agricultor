@@ -1,0 +1,21 @@
+#states{
+    display: inline-block;
+    border: 2px solid black;
+    margin: 0.3rem 2rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.2rem;
+}
+#mpDistricts{
+    display: inline-block;
+    border: 2px solid black;
+    margin: 0.3rem 2rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.2rem;
+    display: none;
+}
+select{
+    outline: none;
+    border: 0.12rem solid black;
+    border-radius: 0.2rem;
+}
+

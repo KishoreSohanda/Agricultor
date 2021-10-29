@@ -1,0 +1,22 @@
+#mainCont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    border: 0.1rem solid black;
+    margin: 1rem 0rem;
+    border: 0.1rem solid black;
+    width: 100%;
+}
+.cards h1{
+    background-color: darkgreen;
+    text-align: center;
+    display: block;
+    border: 0.2rem solid black;
+}
+.cards .c h3{
+    background-color: yellow;
+}

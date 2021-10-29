@@ -1,0 +1,152 @@
+extends base.pug
+
+block title 
+    title Home Page
+
+block style
+    style 
+        include ../static/allcss/home.css
+
+block content 
+    
+    section#sec1 
+
+        div#carouselExampleDark.carousel.carousel-dark.slide(data-bs-ride='carousel')
+            div.carousel-indicators
+                button.active(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='1' aria-label='Slide 2')
+                button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='2' aria-label='Slide 3')
+                button(type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='3' aria-label='Slide 4')
+            div.carousel-inner
+                div.carousel-item.active(data-bs-interval='10000') 
+                    img.d-block.w-100(src='../static/backgrounds/1.jpg' alt='...')
+                    div.carousel-caption.d-none.d-md-block
+                        h5 First slide label
+                        p Some representative placeholder content for the first slide.
+                div.carousel-item(data-bs-interval="2000") 
+                    img.d-block.w-100(src='https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg' alt='...')
+                    div.carousel-caption.d-none.d-md-block
+                        h5 Second slide label
+                        p Some representative placeholder content for the first slide.
+                div.carousel-item
+                    img.d-block.w-100(src='https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg' alt='...')
+                    div.carousel-caption.d-none.d-md-block
+                        h5 Third  slide label
+                        p Some representative placeholder content for the first slide.
+                div.carousel-item
+                    img.d-block.w-100(src='https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg' alt='...')
+                    div.carousel-caption.d-none.d-md-block
+                        h5 4th slide label
+                        p Some representative placeholder content for the first slide.
+            button.carousel-control-prev(type='button' data-bs-target='#carouselExampleDark' data-bs-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.visually-hidden Previous
+            button.carousel-control-next(type='button' data-bs-target='#carouselExampleDark' data-bs-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.visually-hidden Next
+
+    section#sec2 
+
+            table 
+                tr 
+                    th Agriculture Corner  
+                    th Baad me likhna hai
+                    th Related Links 
+                    
+                tr 
+                    td 
+                        span#input Input 
+                            //- i.fa.fa-angle-up#upArrow1
+                            //- i.fa.fa-angle-down#downArrow1
+                        div#tableInput 
+                            li#seeds Seeds  
+                                div#seedSec
+                                    a(href="/dealers#") Dealers 
+                            li#fertilisers Fertilisers 
+                                div#fertiliserSec
+                                    a(href="/dealers#") Dealers 
+                            li#pesticides Pesticides 
+                                div#pesticideSec
+                                    a(href="/dealers#") Dealers 
+                            li 
+                                a(href="#") Farm Machinery 
+                            li 
+                                a(href="#") Irrigation Cycle  
+                    td#mapCol(rowspan="5") 
+                        img(src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Major_crop_areas_India.png", alt="") 
+                    td#relatedLinksCol(rowspan="5") 
+                        li 
+                            a(href="#") Mobile App  
+                        li 
+                            a(href="#") Scheme 1 
+                        li 
+                            a(href="#") Scheme  2
+                        li 
+                            a(href="#") Scheme  3
+                        li 
+                            a(href="#") State Agricultural Department 
+                        li 
+                            a(href="#") mKisaan 
+                        li 
+                            a(href="#") RKVY Projects 
+                tr 
+                    td 
+                        span#weather Weather 
+                        div#tableWeather 
+                            li 
+                                a(href="#") Weather Details     
+                            li 
+                                a(href="#") Extreme Weather Alert  
+
+                tr
+                    td 
+                        span#map Map 
+                        div#tableMap
+                            li 
+                                a(href="#") Agricultural Land 
+                            li 
+                                a(href="#") Irrigated-Unirrigated Area  
+                tr  
+                    td 
+                        span(onclick="javascript:window.location.href='#'") 
+                            |Organic Farming  
+                tr
+                    td 
+                        span(onclick="javascript:window.location.href='#'")  
+                            |Help Center 
+
+    section#sec3
+        div.head
+        .cards#card1 
+            div.part1
+            div.part2
+                h3 
+                    a(href="#") Wheat
+        .cards#card2 
+            div.part1 
+            div.part2
+                h3  
+                    a(href="#") Rice 
+        .cards#card3 
+            div.part1 
+            div.part2
+                h3    
+                    a(href="#") Jowar
+        .cards#card4 
+            div.part1 
+            div.part2
+                h3  
+                    a(href="#") Corn 
+                  
+        
+   
+    
+    
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous") 
+                      
+        
+block script
+    script 
+        include ../static/alljs/home.js 

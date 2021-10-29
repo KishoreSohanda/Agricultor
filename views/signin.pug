@@ -1,0 +1,25 @@
+extends base.pug
+
+block title 
+    title SignIn Page
+
+block style 
+    style 
+        include ../static/allcss/signin.css
+
+block content 
+    #maincont 
+        #container 
+            #left 
+                img(src="../static/backgrounds/logo.png", alt="Error Loading")
+            #right 
+                h1 login 
+                form(action="/signin", method="post")
+                        input#email(type="email" placeholder='Email-Id' required name='email')
+                        input#pass(type="password" placeholder='Password' required name='pass')
+                        button#btn(type="submit" onclick='submit()') Login 
+                a(href="/signup") Create New Account ? 
+   
+block script
+    script 
+        include ../static/alljs/signin.js

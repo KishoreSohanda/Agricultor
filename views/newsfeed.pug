@@ -1,0 +1,110 @@
+extends base.pug
+
+block title 
+    title News Feed Page
+
+block style 
+    style 
+        include ../static/allcss/newsfeed.css
+
+//- 23bc02d20ecb447a9b093ce243d5ccfb
+block content 
+    div#header
+        h1#agri Agricultor News 
+    div#cont
+        div(onclick="javascript:window.location.href='https://www.livemint.com/industry/agriculture/modi-says-efforts-being-made-to-take-farmers-out-of-crop-based-income-system/amp-11632841587063.html'").cards#card1
+            div.left
+                img(src="https://diak46rl5chc7.cloudfront.net/orgs/188677/contents/mt8e7xf1hf8eerl4/w460_mt8e7xf1hf8eerl4.jpg", alt="error")
+            div.right
+                h3 Modi says efforts being made to take farmers out of crop-based income system.
+                p.description
+                    |The Prime Minister said efforts are being made to take the farmer out of the crop-based income system and encourage them for value-addition and other farming options," according to a statement from Prime Minister's Office. He was speaking while dedicating to the nation 35 crop varieties with special traits. 
+                button View More
+
+        div(onclick="javascript:window.location.href='https://www.livemint.com/industry/agriculture/procurement-of-kharif-crops-in-haryana-punjab-from-tomorrow-minister/amp-11633174501433.html' ").cards#card2
+            div.left
+                img(src="https://diak46rl5chc7.cloudfront.net/orgs/188677/contents/nwi5mzrsfb5mhq7x/w460_nwi5mzrsfb5mhq7x.jpg", alt="error")
+            div.right
+                h3 Procurement of Kharif crops in Haryana, Punjab from tomorrow: Govt.
+                p.description
+                    |Following protests from farmers over delayed procurement of Kharif crops like Paddy and Millet, Union Minister Ashwini Kumar Choubey has announced that the procurement in two states of Punjab and Haryana will start from 3 October.
+                button View More
+
+        div(onclick="javascript:window.location.href='https://www.livemint.com/industry/agriculture/india-unveils-new-rice-variety-to-cut-down-on-use-of-water-labour/amp-11632874400529.html' ").cards#card3
+            div.left
+                img(src="https://diak46rl5chc7.cloudfront.net/orgs/188677/contents/hagisxdcvs6kd6lp/w460_hagisxdcvs6kd6lp.jpg", alt="error")
+            div.right
+                h3 India unveils new rice variety to cut down on use of water, labour
+                p.description
+                    |Following protests from farmers over delayed procurement of Kharif crops like Paddy and Millet, UGovernment scientists said the new rice varieties contain a gene that would allow farmers to spray a common, inexpensive herbicide without worrying about any side effects. 
+                button View More
+        
+        div(onclick="javascript:window.location.href='https://krishijagran.com/success-story/how-pearl-farming-made-this-farmer-lakhpati/' ").cards#card4
+            div.left
+                img(src="https://diak46rl5chc7.cloudfront.net/orgs/188677/contents/g252bwgbew53qgvt/w460_g252bwgbew53qgvt.jpg", alt="error")
+            div.right
+                h3  How Pearl Farming Made This Farmer Lakhpati
+                p.description
+                    |Albert Einstein said, “If you always do what you what you always did, you will always get what you always got”. Sanjay Gandate from Maharashtra’s Pardi Kupi village also believed in this saying and this is what pushed him to try something different than the traditional way of pearl cultivation, which was completely dependent on weather.
+                button View More
+
+        div(onclick="javascript:window.location.href='https://www.livemint.com/industry/agriculture/summer-crop-sowing-lags-in-india-on-scanty-rains-raises-concerns-over-yields-11629728520272.html' ").cards#card5
+            div.left
+                img(src="https://images.livemint.com/img/2021/08/23/600x338/monsoonfarms-kBKB--621x414@LiveMint_1629728646809.jpg", alt="error")
+            div.right
+                h3  Summer crop sowing lags in India on scanty rains, raises concerns over yields
+                p.description
+                    |Farmers had planted 104.4 million hectares (25.8 million acres) with summer crops as of Aug. 20, down 1.6% from a year earlier, the Ministry of Agriculture &amp; Farmers' Welfare said
+                button View More
+        
+        div(onclick="javascript:window.location.href='https://www.livemint.com/industry/agriculture/ncw-launches-programme-to-train-rural-women-in-dairy-farming-11632738163795.html' ").cards#card6
+            div.left
+                img(src="https://images.livemint.com/img/2021/09/27/600x338/dairy-kGgC--621x414@LiveMint_1632738995942.jpg", alt="error")
+            div.right
+                h3  NCW launches programme to train rural women in dairy farming
+                p.description
+                    |NCW is collaborating with agricultural universities across India to identify and train women associated with dairy farming and allied activities in different aspects such as value addition, quality enhancement, packaging and marketing of dairy products, among others
+                button View More
+        
+        div(onclick="javascript:window.location.href='https://www.livemint.com/industry/agriculture/why-palm-won-t-fix-india-s-edible-oil-woes-11631030523143.html' ").cards#card7
+            div.left
+                img(src="https://images.livemint.com/img/2021/09/07/600x338/LSpic1_1631030623214_1631030628595.jpg", alt="error")
+            div.right
+                h3  India has an edible oil problem, but palm oil won't fix it
+                p.description
+                    |Amid soaring cooking oil prices, India has a new plan to grow oil palm locally. Is the solution worse than the problem? India plans to add about 2.5 million tonnes of home grown crude palm oil by 2030. Its ₹11,000-cr national mission on oil palm focuses on north-east and Andaman and Nicobar Islands
+                button View More
+
+        div(onclick="javascript:window.location.href='https://www.livemint.com/industry/agriculture/cabinet-approves-rs11-040-crore-scheme-to-reduce-edible-oil-import-dependency-11629284750148.html' ").cards#card8
+            div.left
+                img(src="https://images.livemint.com/img/2021/08/18/600x338/pam_1629315530057_1629315536300.jpg", alt="error")
+            div.right
+                h3  Cabinet okays ₹11,040 cr to cut palm oil imports
+                p.description
+                    |The National Mission on Edible Oils-Oil Palm (NMEO-OP) will have a special focus on the North-eastern region and the Andaman and Nicobar Islands
+                button View More
+
+        div(onclick="javascript:window.location.href='https://www.livemint.com/industry/agriculture/how-technology-is-enabling-smart-farming-11628006763554.html' ").cards#card9
+            div.left
+                img(src="https://images.livemint.com/img/2021/08/03/600x338/LSpic_1628006920633_1628006926299.jpg", alt="error")
+            div.right
+                h3  How technology is enabling  smart farming
+                p.description
+                    |A nascent movement to introduce more tech into the average Indian farm is gathering steam. Will it click? Innovative financial arrangements and micro-loans might be required to increase the adoption of technology in agriculture, which is currently absent
+                button View More
+
+        div(onclick="javascript:window.location.href='https://www.downtoearth.org.in/news/agriculture/heavy-rains-damage-paddy-crop-in-bihar-s-seemanchal-and-kosi-regions-79779' ").cards#card10
+            div.left
+                img(src="https://cdn.downtoearth.org.in/library/large/2021-10-20/0.85839400_1634727865_0.jpg", alt="error")
+            div.right
+                h3  Heavy rains damage paddy crop in Bihar’s Seemanchal and Kosi regions
+                p.description
+                    |Unexpected heavy rainfall in October has ended the hopes of paddy farmers in northeastern Bihar’s Seemanchal and Kosi regions of getting a good crop this year.Vinod Kumar, a scientist at the Araria Krishi Vigyan Kendra, told this reporter that heavy rains October 18 and 19, 2021 had damaged harvested paddy and also affected standing paddy.
+                button View More
+        
+
+
+
+block script
+    script 
+        include ../static/alljs/newsfeed.js

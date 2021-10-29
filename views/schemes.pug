@@ -1,0 +1,70 @@
+extends base.pug
+
+block title 
+    title Programmes &amp; Schemes Page
+
+block style 
+    style
+        include ../static/allcss/schemes.css
+
+block content 
+    table#table 
+        tr 
+            th  Programms &amp; Schemes 
+            th  Description
+            th  Related Links 
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card1'") 1. E-NAM
+            td National Agriculture Market (eNAM) is a pan-India electronic trading portal which networks the existing APMC mandis to create a unified national market for agricultural commodities.
+            td 
+                a(href="https://www.enam.gov.in/web/" target="_blank") www.enam.gov.in
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card2'") 2. National Mission For Sustainable Agriculture (NMSA)
+            td It is one of the major missions of the National Action Plan on Climate Change (NAPCC). This mission tries to comprehensively revamp the agricultural practices so that the desired objectives of the Nationally Determined Contributions (NDC’s) can be achieved.
+            td 
+                a(href="https://nmsa.dac.gov.in/" target="_blank")  nmsa.dac.gov.in
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card3'") 3. Pradhan Mantri Krishi Sinchai Yojana (PMKSY)
+            td Pradhan Mantri Krishi Sinchai Yojana is a national mission to improve farm productivity and ensure better utilization of the resources in the country. The budget of ₹53 billion in a time span of one year 2015-2016 has been allocated to this scheme.
+            td 
+                a(href="https://pmksy.gov.in/" target="_blank") pmksy.gov.in
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card4'") 4. Paramparagat Krishi Vikas Yojana (PKVY)
+            td "Paramparagat Krishi Vikas Yojna (PKVY)" a sub-component of Soil Health Management(SHM) scheme under National Mission of Sustainable Agriculture(NMSA) aims at development of sustainable models of organic farming through a mix of traditional wisdom and modern science to ensure long term soil fertility buildup, resource conservation and helps in climate change adapatation and mitigation.
+            td 
+                a(href="https://pgsindia-ncof.gov.in/PKVY/Introduction.aspx" target="_blank") pgsindia-ncof.gov.inIntroduction.aspx 
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card5'") 5. Pradhan Mantri Fasal Bima Yojana (PMFBY)
+            td The Pradhan Mantri Fasal Bima Yojana (PMFBY) launched on 18 February 2016 by Prime Minister Narendra Modi is an insurance service for farmers for their yield. It aims to reduce the premium burden on farmers and ensure early settlement of crop assurance claim for the full insured sum.
+            td 
+                a(href="https://pmfby.gov.in/" target="_blank") pmfby.gov.in 
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card6'") 6. Gramin Bhandaran Yojna
+            td Gramin Bhandaran Yojana, or Rural Godown Scheme, is an Indian government initiative to offer subsidies to individuals or organizations which build or repair rural godowns.
+            td 
+                a(href="https://pmmodiyojana.in/warehouse-subsidy-scheme/" target="_blank") pmmodiyojana.in
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card7'") 7. Livestock insurance Scheme
+            td The Livestock Insurance Scheme, a centrally sponsored scheme was implemented on a pilot basis during 2005-06 and 2006-07 of the 10th Five Year Plan and 2007-08 of the 11th Five Year Plan in 100 selected districts.
+            td 
+                a(href="https://dahd.nic.in/related-links/livestock-insurance" target="_blank") dahd.nic.in/livestock-insurance
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card8'") 8. Micro Irrigation Fund (MIF)
+            td The Department of Agriculture, Cooperation &amp; Farmers Welfare (DAC&amp;FW) is implementing a Centrally Sponsored Scheme of  ‘Per Drop More Crop’ component of ‘Pradhan Mantri Krishi Sinchayee Yojana (PMKSY-PDMC)’ from  2015-16 in all the States of the country which  focuses on enhancing water use efficiency at farm level through Micro Irrigation viz. Drip and Sprinkler irrigation systems.
+            td 
+                a(href="https://pib.gov.in/PressReleasePage.aspx?PRID=1695228" target="_blank") pib.gov.in 
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card9'") 9. Agriculture Infrastructure Fund
+            td The Union Cabinet in July 2020 has approved a new pan India Central Sector Scheme called Agriculture Infrastructure Fund. The scheme shall provide a medium - long term debt financing facility for investment in viable projects for post-harvest management Infrastructure and community farming assets through interest subvention and financial support.
+            td 
+                a(href="https://agriinfra.dac.gov.in/" target="_blank") agriinfra.dac.gov.in 
+
+        tr 
+            td(onclick="javascript:window.location.href='/p&sdesc#card10'") 10. Agricultural Technology Management Agency (ATMA)
+            td ATMA is a registered society of key stakeholders involved in agricultural activities for sustainable development in the district by integrating research-extension activities and decentralizing day to day management of Public Agricultural Technology System.
+            td 
+                a(href="https://agritech.tnau.ac.in/atma/atma_intro.html" target="_blank") agritech.tnau.ac.in/atma/atma_intro 
+
+block script  
+    script 
+        include ../static/alljs/schemes.js

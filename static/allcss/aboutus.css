@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+section{
+    width: 100%;
+    background-image: url("https://images.yourstory.com/cs/5/f02aced0d86311e98e0865c1f0fe59a2/indian-farmer-1610471656527.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contents{
+    color: white;
+    height: 100%;
+    padding: 3rem 3rem;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+.contents h1{
+    font-family: 'Bebas Neue', cursive;font-size: 3.5rem;
+}
+.contents .contactPart {
+    padding-top: 2rem;
+}
+.contents .contactPart span{
+    font-size: 1.3rem;
+}
+.contents .contactPart button{
+    outline: none;
+    border: 0.1rem solid black;
+    margin: 0.5rem 0rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.3rem;
+    display: block;
+}
+.contents .contactPart .b1 .fa{
+    transform: rotate(107deg);
+}
+
+
