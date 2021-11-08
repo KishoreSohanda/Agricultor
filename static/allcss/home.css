@@ -15,11 +15,18 @@ body{
 /* for height of carousel */
 .carousel-item img{
     height: 21rem;
+    cursor: pointer;
 }
 #sec1.h5,h5{
     color: white;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    border-radius: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.418);
+    cursor: pointer;
 }
+
 #sec1 p{
+    cursor: pointer;
     color: white;
 }
 #sec1 .carousel-dark .carousel-indicators [data-bs-target]{
@@ -47,8 +54,8 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url('../backgrounds/1.jpg');
-    /* background-color: red; */
+    /* background-image: url('../backgrounds/1.jpg'); */
+    background-color: rgb(223, 255, 223);
 }
 #sec2 table th{
     border: 0.1rem solid black;

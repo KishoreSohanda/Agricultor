@@ -10,10 +10,41 @@ svg{
     height: 15rem ;
     width: 30%;
 }
-#box #boxMP{
-    display: none;
-}
-#box #stateName{
+#box .stateName{
     text-align: center;
     background-color: greenyellow;
 }
+#box #boxMP{
+    display: none;
+}
+#box #boxAN{
+    display: none;
+}
+#box #boxAP{
+    display: none;
+}
+#box #boxAR{
+    display: none;
+}
+#box #boxAS{
+    display: none;
+}
+#box #boxBR{
+    display: none;
+}
+#box #boxCH{
+    display: none;
+}
+#box #boxCT{
+    display: none;
+}
+#box #boxDD{
+    display: none;
+}
+#box #boxDL{
+    display: none;
+}
+#box #boxDN{
+    display: none;
+}
+

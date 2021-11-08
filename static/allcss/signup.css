@@ -27,48 +27,22 @@
 }
 #right h1{
     font-family: 'Bebas Neue', cursive;
-    /* text-align: center; */
+    text-align: center;
     font-size: 3rem;
 }
-/* #right form{
+#right form{
     display: flex;
     flex-direction: column;
-} */
-
-#right .inputs.success input{
-    border-color: green;
 }
-#right .inputs.error input{
-    border-color: red;
-}
-#right .inputs.success i .fa.fa-check-circle-o{
-    visibility: visible;
-    color: green;
-}
-#right .inputs.error i .fa.fa-exclamation-circle{
-    visibility: visible;
-    color: red;
-}
-#right .inputs.error small{
-    color: red;
-    visibility: visible;
-}
-#right form .inputs i{
-    visibility: hidden;
-}
-#right form .inputs small{
-    display: block;
-    font-size: 0.7rem;
-    visibility: hidden;
-}
-#right #form .inputs input{
+#right form input{
     border: 0.1rem solid black;
     outline: none;
+    margin: 0.16rem 0rem;
 }
 #btn{
     display: block;
     width: 6rem;
-    margin:0rem 3rem;
+    margin:0.3rem 3rem;
     margin-bottom: 0.5rem;
     border-radius: 0.2rem;
     font-family: 'Roboto', sans-serif;
@@ -83,5 +57,5 @@
 #right a{
     color: blue;
     text-decoration: none;
-    padding: 2rem;
+    padding-left: 1rem;
 }

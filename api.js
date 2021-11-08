@@ -111,7 +111,6 @@ app.post('/signup', (req, res) => {
     });
     mydata.save();
     res.status(200).render('home.pug');
-    alert("hello");
     // res.status(201).send("Your Data Is Saved");
 
   } else {
@@ -136,10 +135,9 @@ app.post('/signin', async (req, res) => {
 
     if (readedUserEmail.password === loginPassword) {
       res.status(200).render("loginsuccess.pug");
-      // res.status(201).send("Login Successful");
     } else {
-      // res.render("signin.pug");
-      res.send("Login Not Successful (Invalid Details)");
+      res.render("signin.pug");
+      // res.send("Login Not Successful (Invalid Details)");
     }
 
   } catch (error) {

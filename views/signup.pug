@@ -15,48 +15,15 @@ block content
                 img(src="../static/backgrounds/logo.png", alt="Error loading") 
             #right     
                 h1 Sign Up
-                form#form.form(action="/signup", method="post" ) 
-                    div.inputs
-                        input(type="text" id="fname" placeholder='First Name'  name="fname")
-                        i.fa.fa-check-circle-o
-                        i.fa.fa-exclamation-circle
-                        small Error Message 
-                    div.inputs
-                        input(type="text" id="lname" placeholder='Last Name'  name="lname")
-                        i.fa.fa-check-circle-o
-                        i.fa.fa-exclamation-circle
-                        small Error Message 
-                    div.inputs
-                        input(type="number" id="mobile" placeholder='Mobile Number'  name="mobile")
-                        i.fa.fa-check-circle-o
-                        i.fa.fa-exclamation-circle
-                        small Error Message 
-                    div.inputs
-                        input(type="text" id="city" placeholder='City Name'  name="city")
-                        i.fa.fa-check-circle-o
-                        i.fa.fa-exclamation-circle
-                        small Error Message 
-                    div.inputs
-                        input(type="text" id="state" placeholder='State Name'  name="state")
-                        i.fa.fa-check-circle-o
-                        i.fa.fa-exclamation-circle
-                        small Error Message 
-                    div.inputs
-                        input(type="email" id="email" placeholder='Email-Id'  name="email")
-                        i.fa.fa-check-circle-o
-                        i.fa.fa-exclamation-circle
-                        small Error Message 
-                    div.inputs
-                        input(type="password" id="pass" placeholder='Password'  name="password")
-                        i.fa.fa-check-circle-o
-                        i.fa.fa-exclamation-circle
-                        small Error Message 
-                    div.inputs
-                        input(type="password" id="cpass" placeholder='Confirm Password'  name="cpass")
-                        i.fa.fa-check-circle-o
-                        i.fa.fa-exclamation-circle
-                        small Error Message 
-
+                form#form(action="/signup", method="post" ) 
+                    input(type="text" id="fname" placeholder='First Name'  name="fname")
+                    input(type="text" id="lname" placeholder='Last Name'  name="lname")
+                    input(type="number" id="mobile" placeholder='Mobile Number'  name="mobile")
+                    input(type="text" id="city" placeholder='City Name'  name="city")
+                    input(type="text" id="state" placeholder='State Name'  name="state")
+                    input(type="email" id="email" placeholder='Email-Id'  name="email")
+                    input(type="password" id="pass" placeholder='Password'  name="password")
+                    input(type="password" id="cpass" placeholder='Confirm Password'  name="cpass")
                     button#btn Submit
                 a(href="/signin") Already A User ? 
 
