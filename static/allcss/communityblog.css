@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+h3{
+    background-color: rgb(255, 188, 140);
+    color: black;
+    border: 0.1rem solid black;
+    text-align: center;
+}
+#conts{
+    background-color: rgb(255, 230, 183);
+    border: 0.1rem solid black;
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    background-color: rgb(253, 105, 105);
+    border: 0.1rem solid black;
+    display: block;
+    margin: auto;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}

@@ -73,7 +73,16 @@ const signupSchema = {
   }
 };
 
+const newpostSchema = {
+  question: {
+    type:String,
+    required:true,
+    minlength:[10,"minimum 10letters"], 
+  }
+};
+
 const Signup = mongoose.model('Signup', signupSchema);
+const Newpost = mongoose.model('Newpost', newpostSchema);
 
 
 app.use('/static', express.static('static'));
@@ -169,9 +178,27 @@ app.get('/dealers', (req, res) => {
 app.get('/communityblog', (req, res) => {
   res.status(200).render('communityblog.pug');
 });
+app.get('/newpost', (req, res) => {
+  res.status(200).render('newpost.pug');
+});
+app.post('/newpost', (req, res) => {
 
+  const question = req.body.question;
+  if (question!= "") {
 
+    var data = new Newpost({
+      question: req.body.question
+    });
+    data.save();
+    // res.status(200).render('home.pug');
+    res.status(201).send("Your Data Is Saved");
 
+  }
+  else{
+    res.send("your data is not saved");
+  }
+
+});
 // ************  Major Crops Section   ******************
 
 app.get('/mp', (req, res) => {

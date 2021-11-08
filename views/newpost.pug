@@ -1,0 +1,17 @@
+extends base.pug
+
+block title 
+    title Create New Post Page
+
+block style 
+    style 
+        include ../static/allcss/newpost.css
+
+block content 
+    div#conts
+        form(action="/newpost" , method="post") 
+            textarea(name="question", cols="100", rows="10") 
+            button Create 
+block script
+    //- script 
+    //-     include ../static/alljs/signin.js

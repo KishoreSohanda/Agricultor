@@ -1,0 +1,10 @@
+button{
+    display: block;
+    background-color: rgb(79, 248, 79);
+    border: 0.1rem solid black;
+    margin: auto;
+}
+textarea{
+    display: block;
+    margin: auto;
+}
