@@ -8,3 +8,9 @@ textarea{
     display: block;
     margin: auto;
 }
+#date{
+    display:none;
+}
+#time{
+    display: none;
+}

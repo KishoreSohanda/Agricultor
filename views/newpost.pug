@@ -11,7 +11,9 @@ block content
     div#conts
         form(action="/newpost" , method="post") 
             textarea(name="question", cols="100", rows="10") 
+            input#date(name="date")
+            input#time(name="time")
             button Create 
 block script
-    //- script 
-    //-     include ../static/alljs/signin.js
+    script 
+        include ../static/alljs/newpost.js

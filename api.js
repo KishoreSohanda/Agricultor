@@ -78,6 +78,14 @@ const newpostSchema = {
     type:String,
     required:true,
     minlength:[10,"minimum 10letters"], 
+  },
+  date: {
+    type:String,
+    required:true,
+  },
+  time: {
+    type:String,
+    required:true,
   }
 };
 
@@ -178,8 +186,7 @@ app.get('/dealers', (req, res) => {
 app.get('/communityblog', (req, res) => {
   const posts = Newpost.find({},function (err,newpost) {
    res.status(200).render('communityblog.pug',{
-     questionsList:newpost,
-     createdAt:new Date()
+     questionsList:newpost
    });
   });
 });
@@ -193,6 +200,8 @@ app.post('/newpost', (req, res) => {
     
     var data = new Newpost({
       question: req.body.question,
+      date: req.body.date,
+      time: req.body.time,
     });
     data.save();
     // res.status(200).render('communityblog.pug');

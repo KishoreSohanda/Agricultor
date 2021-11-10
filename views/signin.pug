@@ -14,10 +14,10 @@ block content
                 img(src="../static/backgrounds/logo.png", alt="Error Loading")
             #right 
                 h1 login 
-                form(action="/signin", method="post")
+                form#form(action="/signin", method="post")
                         input#email(type="email" placeholder='Email-Id' required name='email')
                         input#pass(type="password" placeholder='Password' required name='pass')
-                        button#btn(type="submit" onclick='submit()') Login 
+                        button#btn(type="submit" ) Login 
                 a(href="/signup") Create New Account ? 
    
 block script

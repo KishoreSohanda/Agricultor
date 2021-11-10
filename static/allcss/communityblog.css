@@ -29,3 +29,7 @@ h3{
     color: black;
     font-weight: bold;
 }
+#conts span{
+    border:0.1rem solid black ;
+    margin: 0rem 1rem;
+}

@@ -1,25 +1,31 @@
 let email = document.getElementById('email');
 let password = document.getElementById('pass');
+let form = document.getElementById('form');
 
-function submit() {
-    let mailformat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+form.addEventListener("submit",function(e) {
 
-    if (email.value === "" || email.value==null) {
-        email.style.borderColor = 'red';
-        alert("Please Enter Email");
-    } 
-    else if (mailformat.test(email.value)){
-        console.log("ok");
-    }
-    else{
-        email.style.borderColor = 'red';
+    if (email.value === "" || email.value == null) {
+        e.preventDefault(); 
         alert("Please Enter Valid Email");
+        email.style.borderColor = "red";
     }
-    if (password.value === "" || password.value==null) {
-        password.style.borderColor = 'red';
-        alert("Please Enter Password");
-    } else {
-        return true;
+
+    if (password.value === "" || password.value == null) {
+        e.preventDefault(); 
+        alert("Please Enter Valid Password");
+        password.style.borderColor = "red";
     }
-    
-}
+
+    if (password.value.length < 8) {
+        e.preventDefault();
+        alert("Password Should Contains Atleast 8 Characters");
+        password.style.borderColor = "red";
+    } 
+
+    if (password.value.length > 16) {
+        e.preventDefault();
+        alert("Password Should Not Contains 16+ Characters");
+        password.style.borderColor = "red";
+    }
+
+});

@@ -15,7 +15,7 @@ block content
                 img(src="../static/backgrounds/logo.png", alt="Error loading") 
             #right     
                 h1 Sign Up
-                form#form(action="/signup", method="post" ) 
+                form#form(action="/signup", method="post") 
                     input(type="text" id="fname" placeholder='First Name'  name="fname")
                     input(type="text" id="lname" placeholder='Last Name'  name="lname")
                     input(type="number" id="mobile" placeholder='Mobile Number'  name="mobile")
@@ -24,7 +24,8 @@ block content
                     input(type="email" id="email" placeholder='Email-Id'  name="email")
                     input(type="password" id="pass" placeholder='Password'  name="password")
                     input(type="password" id="cpass" placeholder='Confirm Password'  name="cpass")
-                    button#btn Submit
+                    input#btn(type="submit", value="Submit")
+                    //- button#btn Submit
                 a(href="/signin") Already A User ? 
 
 block script  

@@ -12,12 +12,14 @@ block content
     h3 To Create A New Post  
     button.btn 
         a(href="/newpost")  Click Here
-    div#conts
-        each newpost in questionsList 
+    each newpost in questionsList 
+        div#conts
             h1= newpost.question 
-            p= newpost.createdAt
+            span= newpost.time 
+            span= newpost.date
+          
   
-   
+
 block script
     //- script 
-    //-     include ../static/alljs/signin.js
+    //-     include ../static/alljs/communityblog.js
