@@ -13,9 +13,9 @@ block content
     button.btn 
         a(href="/newpost")  Click Here
     div#conts
-        div.cards
-            h5 Question
-            p Answer 
+        each newpost in questionsList 
+            h1= newpost.question 
+            p= newpost.createdAt
   
    
 block script

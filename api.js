@@ -176,28 +176,33 @@ app.get('/dealers', (req, res) => {
   res.status(200).render('dealers.pug');
 });
 app.get('/communityblog', (req, res) => {
-  res.status(200).render('communityblog.pug');
+  const posts = Newpost.find({},function (err,newpost) {
+   res.status(200).render('communityblog.pug',{
+     questionsList:newpost,
+     createdAt:new Date()
+   });
+  });
 });
 app.get('/newpost', (req, res) => {
-  res.status(200).render('newpost.pug');
+    res.status(200).render('newpost.pug');
 });
 app.post('/newpost', (req, res) => {
-
+  
   const question = req.body.question;
   if (question!= "") {
-
+    
     var data = new Newpost({
-      question: req.body.question
+      question: req.body.question,
     });
     data.save();
-    // res.status(200).render('home.pug');
+    // res.status(200).render('communityblog.pug');
     res.status(201).send("Your Data Is Saved");
-
+    
   }
   else{
     res.send("your data is not saved");
   }
-
+  
 });
 // ************  Major Crops Section   ******************
 

@@ -25,3 +25,7 @@ h3{
     text-decoration: none;
     color: black;
 }
+#conts p{
+    color: black;
+    font-weight: bold;
+}
