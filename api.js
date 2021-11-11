@@ -4,6 +4,7 @@ const app = express();
 const path = require('path');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
+const { pipeline } = require('stream');
 
 mongoose.connect('mongodb://localhost:27017/Agricultor', {
   useNewUrlParser: true, useUnifiedTopology: true
@@ -72,7 +73,6 @@ const signupSchema = {
     maxlength:16
   }
 };
-
 const newpostSchema = {
   question: {
     type:String,
@@ -201,11 +201,12 @@ app.post('/newpost', (req, res) => {
     var data = new Newpost({
       question: req.body.question,
       date: req.body.date,
-      time: req.body.time,
+      time: req.body.time
     });
     data.save();
     // res.status(200).render('communityblog.pug');
-    res.status(201).send("Your Data Is Saved");
+    // res.status(201).send("Your Data Is Saved");
+    res.redirect('/communityblog');
     
   }
   else{

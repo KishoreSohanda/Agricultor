@@ -8,15 +8,19 @@ block style
         include ../static/allcss/communityblog.css
 
 block content 
-    h1 Welcome To Community blog  
-    h3 To Create A New Post  
-    button.btn 
-        a(href="/newpost")  Click Here
+    section#sec1
+        h1 Community blog  
+        div#partition
+            h3 To Create A New Post  
+            button.btn 
+                a(href="/newpost")  Click Here
     each newpost in questionsList 
         div#conts
-            h1= newpost.question 
+            div#upper
+                i.fa.fa-user-circle-o
             span= newpost.time 
             span= newpost.date
+            h1= newpost.question 
           
   
 
