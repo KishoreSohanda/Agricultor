@@ -16,23 +16,27 @@ h1{
     width: 30%;
     background-color: rgba(0, 0, 0, 0.397);
     position: absolute;
-    height: 50%;
-    top: 15rem;
+    height: 25rem;
+    top: 12rem;
     right: 8rem;
+    /* border: 0.01rem solid white; */
 }
-h3{
+#sec1 #partition h3 {
     color: white;
-    border: 0.1rem solid white;
+    padding: 0.7rem 0rem;
+    text-align: center;
+}
+#sec1 #partition p {
+    color: white;
+    padding: 0.3rem 1rem;
+    text-align: justify;
 }
 #conts{
-    background-color: rgb(255, 230, 183);
-    border: 0.1rem solid black;
-    width: 90%;
-    margin: auto;
 }
 .btn{
     background-color: rgb(255, 196, 0);
     border: 0.1rem solid black;
+    margin: auto;
     display: block;
 }
 .btn a{

@@ -11,17 +11,24 @@ block content
     section#sec1
         h1 Community blog  
         div#partition
-            h3 To Create A New Post  
+            h1 Welcome 
+            h3 To Community Blog Section 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel, consectetur mollitia, consequatur, nulla laudantium dolorem asperiores repellendus voluptas fugit nam delectus dolorum! Repudiandae minima velit soluta nihil quia? 
+            h3 To Create New Post 
             button.btn 
-                a(href="/newpost")  Click Here
-    each newpost in questionsList 
-        div#conts
-            div#upper
-                i.fa.fa-user-circle-o
-            span= newpost.time 
-            span= newpost.date
-            h1= newpost.question 
-          
+                a(href="/newpost")  Create 
+                    i.fa.fa-plus-square
+    section#sec2 
+        each newpost in questionsList 
+            div#conts
+                div#upper
+                    i.fa.fa-user-circle-o
+                span= newpost.time 
+                span= newpost.date
+                h1= newpost.question 
+            
+        //- each signupDetails in signupList
+        //-     h5= signupDetails.fname 
   
 
 block script

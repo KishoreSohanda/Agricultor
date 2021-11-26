@@ -189,6 +189,11 @@ app.get('/communityblog', (req, res) => {
      questionsList:newpost
    });
   });
+  const name = Signup.find({},function (err,signupDetails) {
+   res.status(200).render('communityblog.pug',{
+     signupList:signupDetails
+   });
+  });
 });
 app.get('/newpost', (req, res) => {
     res.status(200).render('newpost.pug');
