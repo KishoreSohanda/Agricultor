@@ -1,25 +1,82 @@
-extends base.pug
+doctype html 
+html 
+    head 
+        title SignIn Page
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        style 
+            include ../static/allcss/signin.css
+    body 
 
-block title 
-    title SignIn Page
-
-block style 
-    style 
-        include ../static/allcss/signin.css
-
-block content 
-    #maincont 
-        #container 
-            #left 
+        nav#navbar 
+            .cont#logo  
                 img(src="../static/backgrounds/logo.png", alt="Error Loading")
-            #right 
-                h1 login 
-                form#form(action="/signin", method="post")
-                        input#email(type="email" placeholder='Email-Id' required name='email')
-                        input#pass(type="password" placeholder='Password' required name='pass')
-                        button#btn(type="submit" ) Login 
-                a(href="/signup") Create New Account ? 
+                p agricultor 
+            .cont#navlinks
+                ul#topnav 
+                    li
+                        a
+                            i.fa.fa-home 
+                            |   Home 
+                    li 
+                        a About Us 
+                    li 
+                        a Programmes &amp; Schemes   
+                    li 
+                        a Major Crops   
+                    li 
+                        a News Feed   
+                    li 
+                        a Community Blog   
+            .cont#login  
+                ul#sign 
+                    li 
+                        button 
+                            a(href="/signin") 
+                                i.fa.fa-sign-in 
+                                |   SignIn 
+                    li 
+                        button 
+                            a(href="/signup") 
+                                i.fa.fa-user-plus
+                                |   SignUp
+                    .trigram(onclick="toggle()") 
+                        i.fa.fa-bars 
+
+
+        #maincont 
+            #container 
+                #left 
+                    img(src="../static/backgrounds/logo.png", alt="Error Loading")
+                #right 
+                    h1 login 
+                    form#form(action="/signin", method="post")
+                            input#email(type="email" placeholder='Email-Id' required name='email')
+                            input#pass(type="password" placeholder='Password' required name='pass')
+                            button#btn(type="submit" ) Login 
+                    a(href="/signup") Create New Account ? 
+        
+        footer 
+            div#foot
+                br
+                a Home 
+                a About Us 
+                a Programmes &amp; Schemes  
+                a Major Crops
+                a News Feed 
+                a Community Blog 
+                
+                div.socialMedia
+                    i.fa.fa-envelope
+                    i.fa.fa-facebook-square
+                    i.fa.fa-instagram 
+                    i.fa.fa-twitter 
+                span#span All 
+                    i.fa.fa-copyright
+                    |   CopyRight Reserved @Agricultor 2021.
+                span Last Updated : 1 NOVEMBER,2021
+
+
    
-block script
-    script 
-        include ../static/alljs/signin.js
+        script 
+            include ../static/alljs/signin.js
+        script(src='https://kit.fontawesome.com/a616b3ff45.js' crossorigin='anonymous')

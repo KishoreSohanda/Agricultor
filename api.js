@@ -102,7 +102,17 @@ app.locals.basedir = app.get('views');
 
 
 app.get('/', (req, res) => {
-  res.status(200).render('home.pug');
+  res.status(200).render('signin.pug');
+});
+
+app.get('/home', (req, res) => {
+  // res.status(200).render('home.pug');
+  const name = Signup.find({},function (err,Details) {
+    res.status(200).render('home.pug',{
+      signupList:Details,
+      message:"hello"
+    });
+   });
 });
 
 app.get('/signup', (req, res) => {
@@ -189,11 +199,7 @@ app.get('/communityblog', (req, res) => {
      questionsList:newpost
    });
   });
-  const name = Signup.find({},function (err,signupDetails) {
-   res.status(200).render('communityblog.pug',{
-     signupList:signupDetails
-   });
-  });
+  
 });
 app.get('/newpost', (req, res) => {
     res.status(200).render('newpost.pug');

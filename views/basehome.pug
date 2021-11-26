@@ -5,7 +5,7 @@ nav#navbar
     .cont#navlinks
         ul#topnav 
             li
-                a(href="/")
+                a(href="/home")
                     i.fa.fa-home 
                     |   Home 
             li 
@@ -19,16 +19,5 @@ nav#navbar
             li 
                 a(href="/communityblog") Community Blog   
     .cont#login  
-        ul#sign 
-            li 
-                button 
-                    a(href="/signin") 
-                        i.fa.fa-sign-in 
-                        |   SignIn 
-            li 
-                button 
-                    a(href="/signup") 
-                        i.fa.fa-user-plus
-                        |   SignUp
-            .trigram(onclick="toggle()") 
-                i.fa.fa-bars 
+        each Details in signupList 
+            h1= Details.fname 

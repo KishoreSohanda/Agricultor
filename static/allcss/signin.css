@@ -1,6 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    border: 0.1rem solid black;
+    background: linear-gradient(to top , rgb(69, 179, 69),rgb(251, 255, 195) );
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo img{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(0, 34, 14);
+    border-radius: 0.2rem;
+}
+#logo p{
+    margin-bottom: 0rem;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.9rem;
+    cursor: context-menu;
+}
+#navlinks #topnav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0rem;
+}
+#navlinks #topnav a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 0.1rem 1rem;
+    cursor: context-menu;
+}
+#navlinks #topnav a:hover{
+    border: 0.1rem solid black;
+    background-color: rgb(245, 245, 222);
+    border-radius: 0.2rem;
+}
+
+/* #login {
+  visibility:hidden ;
+} */
+#login #sign{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+#login #sign li button{
+    margin: 0rem 0.2rem;
+    background-color: rgb(26, 26, 201);
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    outline: none;
+}
+#login #sign li button:hover{
+    background-color: rgba(31, 31, 248, 0.774);
+}    
+
+#login #sign a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration:none ;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0rem 0rem;
+}
+.trigram{
+    display: none;
+    margin-left: 0.4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#foot{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+#foot a{
+    text-decoration: none;
+    color: white;
+    padding: 0.15rem 0.8rem;
+    cursor: context-menu;
+}
+#foot a:hover{
+    color: rgb(118, 118, 255);
+    text-decoration: underline;
+}
+#foot #span{
+    padding: 0.2rem 1rem;
+    display: block;
+}
+#foot .socialMedia{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.7rem auto;
+    padding: 0.3rem 0rem;
+}
+
+@media screen and (max-width:1224px) {
+    #navlinks #topnav{
+        position: absolute;
+        top: 3.43rem;
+        left: 0rem;
+        width: 100%;
+        padding: 0.4rem 0rem;
+        margin: 0rem;
+        flex-direction: column;
+        align-items: unset;
+        background: linear-gradient(to right , rgb(69, 179, 69),rgb(251, 255, 195) );
+        border: 0.1rem solid black;
+        display: none;
+        z-index: 2;
+    }
+    .trigram{
+        display: block;
+    }
+}
+
+/* ############################################################################################################# */
+
 #maincont{
     display: flex;
     justify-content: center;
