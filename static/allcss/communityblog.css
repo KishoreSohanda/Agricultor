@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 h1{
    background-color: rgba(0, 0, 0, 0.562);
    color: orange;
    font-family: 'Bebas Neue', cursive;
    padding: 0.3rem;
-   text-align: center;
    margin-bottom: 0rem;
+   text-align: center;
+}
+#mainQ{
+   color: white;
+   padding: 0.3rem;
+   margin-bottom: 0rem;
+   margin-top: 1rem;
+   text-align: left;
+   font-family: 'Roboto', sans-serif;
+   text-transform: capitalize;
+   font-size: 1.7rem;
 }
 #sec1{
     background-image: url('/static/backgrounds/cblog.jpg');
@@ -16,7 +33,7 @@ h1{
     width: 30%;
     background-color: rgba(0, 0, 0, 0.397);
     position: absolute;
-    height: 25rem;
+    height: 28rem;
     top: 12rem;
     right: 8rem;
     /* border: 0.01rem solid white; */
@@ -30,8 +47,33 @@ h1{
     color: white;
     padding: 0.3rem 1rem;
     text-align: justify;
+    font-family: 'Satisfy', cursive;
+    font-size: 1rem;
+    color: white;
+    padding: 0rem 5rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
 }
 #conts{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+    padding: 1rem 2rem;
+    border: 0.2rem solid white;
+    border-radius: 0.3rem;
+}
+#upper{
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0rem ;
+}
+#sp2{
+    float: right;
+}
+#q{
+    border: none;
+    color: white;
 }
 .btn{
     background-color: rgb(255, 196, 0);
@@ -48,9 +90,16 @@ h1{
     font-weight: bold;
 }
 #conts span{
-    border:0.1rem solid black ;
+    border:0.1rem solid white;
     margin: 0rem 1rem;
+    color: white;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.2rem;
 }
 #conts .fa-user-circle-o{
-    color: red;
+    color: white;
+}
+#sec2{
+    background-image: url('/static/backgrounds/pexels-brett-sayles-3114462.jpg');
+    padding: 3rem;
 }

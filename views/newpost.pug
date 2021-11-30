@@ -10,10 +10,10 @@ block style
 block content 
     div#conts
         form(action="/newpost" , method="post") 
-            textarea(name="question", cols="100", rows="10") 
+            textarea(name="question", cols="60", rows="15") 
             input#date(name="date")
             input#time(name="time")
-            button Create 
+            button Save Post
 block script
     script 
         include ../static/alljs/newpost.js

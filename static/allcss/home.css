@@ -54,16 +54,22 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url('/static/backgrounds/bgimg.jpg');
+    background-image: url('/static/backgrounds/pexels-pixabay-66869.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: rgb(223, 255, 223); */
+    background-color: rgb(223, 255, 223);
+    /* background: linear-gradient(to right , rgb(69, 179, 69),rgb(251, 255, 195) ); */
 }
 #sec2 table th{
-    border: 0.1rem solid black;
+    border: 0.1rem solid white;
     text-align: center;
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.726);
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    letter-spacing: 0.1rem;
 }
 #sec2 table td{
     border: 0.1rem solid black;
@@ -79,7 +85,8 @@ body{
     /* text-align: center; */
     cursor: pointer;
     color: white;
-    background-color: rgba(18, 66, 18, 0.863);    
+    background-color: rgba(0, 0, 0, 0.63);    
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
     padding: 0.3rem 0.2rem ;
     /* margin: 1rem 0rem; */
 }
@@ -90,6 +97,14 @@ body{
     display: none;
     margin-left: 9.5rem;
 } */
+#sec2 #relatedLinksCol li a{
+    margin: 1rem 0rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.63);    
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    padding: 0.3rem 0.2rem ;
+}
 #sec2 table li{
     list-style: none;
 }
@@ -113,11 +128,13 @@ body{
     text-decoration: none;
     color: black;
 }
+
 #mapCol img{
     margin: 0rem;
     padding: 0rem;
     height: 24.5rem;
     width: 23rem;
+    cursor: pointer;
 }
 
 /* *************** SECTION 3 **************** */
@@ -127,7 +144,8 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0rem;
-    background: rgb(186, 247, 186);
+    /* background: linear-gradient(to left , rgb(69, 179, 69),rgb(251, 255, 195) ); */
+    background-image: url('/static/backgrounds/pexels-anna-shvets-5217881.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -140,10 +158,17 @@ body{
     border-bottom-left-radius: 0.4rem;
     border-bottom-right-radius: 0.4rem;
 }
+.cards a{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    text-decoration: none;
+}
 .cards h3{
     text-align: center;
     border-top: 0.1rem solid black;
     padding-bottom: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.658);
 }
 .cards .part1{
     height: 85%;    

@@ -1,9 +1,48 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
 #table{
-    margin: 1rem auto;
+    border: 0.1rem solid white;
 }
 #table th{
     border: 0.1rem solid black;
+    font-size: 1.6rem;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.76);
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+table tr a{
+    border: 0.1rem solid black;
+    text-align: center;
+    color: black;
+    background-color: rgba(55, 65, 21, 0.582);
+    /* text-shadow: 0.1rem 0.1rem 0.1rem black; */
+    text-align: center;
+    font-weight: 800;
+    background-color: rgba(0, 161, 0, 0.692);
+    
+}
+#table tr:hover{
+    background-color: rgba(0, 0, 0, 0.651);
 }
 #table td{
     border: 0.1rem solid black;
+    text-align: center;
+    color: black;
+    background-color: rgba(55, 65, 21, 0.582);
+    /* text-shadow: 0.1rem 0.1rem 0.1rem black; */
+    text-align: center;
+    font-weight: 800;
+    background-color: rgba(0, 161, 0, 0.692);
+    
+}
+#sec1{
+    /* background-color: yellow; */
+    background-image: url('/static/backgrounds/pexels-tom-fisk-3266777.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }

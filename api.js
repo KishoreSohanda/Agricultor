@@ -137,7 +137,7 @@ app.post('/signup', (req, res) => {
       cpass: req.body.cpass
     });
     mydata.save();
-    res.status(200).render('home.pug');
+    res.status(200).render('signin.pug');
     // res.status(201).send("Your Data Is Saved");
 
   } else {
@@ -163,8 +163,8 @@ app.post('/signin', async (req, res) => {
     if (readedUserEmail.password === loginPassword) {
       res.status(200).render("loginsuccess.pug");
     } else {
-      res.render("signin.pug");
-      // res.send("Login Not Successful (Invalid Details)");
+      // res.render("signin.pug");
+      res.send("Login Not Successful (Invalid Details)");
     }
 
   } catch (error) {
